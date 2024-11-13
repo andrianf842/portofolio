@@ -41,6 +41,10 @@ section::before{
 
 }
 
+.home img{
+    width: 100%;
+}
+
 .home .arrow img{
     width: 60px;
 }
@@ -125,6 +129,37 @@ section::before{
 
 #work-3:hover::after{
     content: 'web development';
+}
+
+#contact::before{
+    content: 'contact';
+}
+
+.contact{
+    padding-bottom: 128px;
+}
+
+.contact form{
+    border: 2px solid black;
+    padding: 64px 32px;
+    border-radius: 24px;
+}
+
+.form-label{
+    font-weight: 700;
+}
+
+@media only screen and (max-width:768px){
+    .home img{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:576px){
+    section::before{
+        left: -10px;
+        font-size: 64px;
+    }
 }
 
 @keyframes upDown {
